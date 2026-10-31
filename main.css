@@ -124,3 +124,17 @@ nav {
 .test {
     height: 500px;
 }
+
+#Reference{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#GA4_Notification{
+    margin: 0 auto;
+    width:fit-content;
+    margin-top: 2%;
+    text-align: center;
+    padding: 0.3% ;
+    border: solid #000 ;
+}
