@@ -3,6 +3,7 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZXNGPY23C"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -10,12 +11,16 @@
 
     gtag('config', 'G-PZXNGPY23C');
   </script>
+
   <meta lang="jp">
   <meta charset="UTF-8">
-  <title>大学生の化学 : 電子配置とK殻の関係
-  </title>
+
+  <title>大学生の化学 : 電子配置とK殻の関係</title>
+
+  <link rel="stylesheet" type="text/css" href="/common.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <html>
 
 <body>
@@ -30,26 +35,276 @@
   </header>
 
   <div id="contents">
-    <aside>abcdehfhyugui</aside>
-    <footer>あいうえおかきく</footer>
-    <h1>これはすごいウェブサイトです</h1>
-    あいうえお
-    <p>こんにちは
-      ありがとう
-      こんばんは
+    <p id="first_p">高校の化学では原子に入る電子はK, L, M, N...殻に分けて考えられる。<br>
+      そして、n番目の殻には
+      <math>
+        <mn>2n²</mn>
+      </math> 個の電子は入る。<br>
+      例えば以下の水素はK殻に1個、ナトリウムではL殻まで完全に充填され、M殻に一個入る。
     </p>
 
-    <h1>ｈ１は１番大きい見出し</h1>
-    <h2>ｈ２は２番目に大きい見出し</h2>
-    <h3>ｈ３は３番目に大きい見出し</h3>
-    <h4>ｈ４は４番目に大きい見出し</h4>
-    <h5>ｈ５は５番目に大きい見出し</h5>
-    <h6>ｈ６は１番小さい見出し</h6>
-    <button id="start">これはボタンです</button>
-    <div> a </div>
-    <div>
-      <img id="kusa" src="Grass_Test_texture.png">
+    <div class="orbitals_img_div">
+      <div class="column"> <img src="Hydrogen.png" alt="電子配置の図" width="300" height="300" decoding="async"> </div>
 
+      <div class="column"> <img src="Natrium.png" alt="電子配置の図" width="300" height="300" decoding="async"> </div>
+    </div>
+
+    <p>大学化学では電子がどこに充填されているかは、電子配置を軌道の種類ごとに記述する。<br></p>
+
+
+
+    <p>
+      これを理解するためにはまず、電子がどう存在するかは量子力学によって示されることを理解する必要がある。<br>
+      以下のシュレディンガー方程式により電子の状態を記述することができる。<br>
+      この式がどう導かれたか、計算したのか、これらはいったん無視した方が良い。終わらないので。<br>
+      <math class="equation">
+        <mi>i</mi>
+        <mo>&InvisibleTimes;</mo>
+        <mi>&#x210F;</mi>
+        <mfrac>
+          <mrow>
+            <mo>&#x2202;</mo>
+            <mi>&#x03C8;</mi>
+          </mrow>
+          <mrow>
+            <mo>&#x2202;</mo>
+            <mi>t</mi>
+          </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mover>
+          <mi>H</mi>
+          <mo>&Hat;</mo>
+        </mover>
+        <mi>Ψ</mi>
+      </math><br>
+      シュレディンガー方程式を解くと3つの整数（量子数）が得られる。
+      <math>
+        <mi>n</mi>
+      </math> 主量子数、 <math>
+        <mi>l</mi>
+      </math> 方位量子数、 <math>
+        <msub>
+          <mi>m</mi>
+          <mi>l</mi>
+        </msub>
+      </math> 磁気量子数である。<br>
+      この3つの量子数は電子の状態を決定する。<br>
+      <math>
+        <mi>n</mi>
+        <mspace width="0.5em" />
+        <mo>(</mo>
+        <mo>></mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </math> は電子がどの殻に入るかを決定する。1ならK殻、2ならL殻、と大きくなるほど外側の殻を示す。<br>
+      <math>
+        <msub>
+          <mi>l</mi>
+          <mi>n</mi>
+        </msub>
+        <mspace width="0.5em" />
+        <mo>(</mo>
+        <mn>0</mn>
+        <mo>≤</mo>
+        <mi>l</mi>
+        <mo>≤</mo>
+        <mn>n</mn>
+        <mo>-</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </math> 方位量子数は電子がどの軌道に入るかを決定する。<br>
+      シュレディンガー方程式の結果から、軌道の形が定まり、<math>
+        <mi>l</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </math> は s 軌道、<math>
+        <mi>l</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </math> は p 軌道、<math>
+        <mi>l</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+      </math> は d 軌道、<math>
+        <mi>l</mi>
+        <mo>=</mo>
+        <mn>3</mn>
+      </math> はf軌道を示す。<br>
+      磁気量子数 <math>
+        <msub>
+          <mi>m</mi>
+          <mi>l</mi>
+        </msub>
+        <mspace width="0.5em" />
+        <mo>(</mo>
+        <mo>-</mo>
+        <msub>
+          <mi>l</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>≤</mo>
+        <msub>
+          <mi>m</mi>
+          <mi>l</mi>
+        </msub>
+        <mo>≤</mo>
+        <msub>
+          <mi>l</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>)</mo>
+      </math>
+      は軌道の向きを決定する。 <br>
+      例えば <math>
+        <msub>
+          <mi>m</mi>
+          <mi>l</mi>
+        </msub>
+        <mo>=</mo>
+        <mn>-1,0,1</mn>
+      </math>なので p 軌道には3つの軌道が存在する。<br>
+      この3つの p 軌道はエネルギーが同じでありこれらを「縮退した軌道」という。<br>
+      以下に示した s 軌道、 p 軌道の形を見ると s 軌道は球対称、 p 軌道は二つの葉を持つ。<br>
+      <br>
+    </p>
+
+    <div class="orbitals_img_div">
+      <div class="column"> <img src="s_orbital.png" alt=" s 軌道" width="300" height="300" decoding="async">
+        <p class="column-text"> s 軌道</p>
+      </div>
+      <div class="column"> <img src="pz_orbital.png" alt=" p 軌道" width="300" height="300" decoding="async">
+        <p class="column-text"> p 軌道</p>
+      </div>
+      <div class="column"> <img src="p_All_orbital.png" alt=" p 軌道3つ" width="300" height="300" decoding="async">
+        <p class="column-text"> p 軌道3つ</p>
+      </div>
+    </div>
+
+    <p>
+      さらに量子数にはもう一つスピン量子数 <math>
+        <msub>
+          <mi>s</mi>
+          <mi>z</mi>
+        </msub>
+        <mspace width="0.5em" />
+        <mo>(</mo>
+        <msub>
+          <mi>s</mi>
+          <mi>z</mi>
+        </msub>
+        <mo>=</mo>
+        <mo>±</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mo>)</mo>
+      </math>がある。これらの数値を組み合わせることで電子の状態を決定することができる。<br>
+      例えば水素の電子は <math>
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </math>、 <math>
+        <msub>
+          <mi>l</mi>
+          <mn>0</mn>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </math>、 <math>
+        <msub>
+          <mi>m</mi>
+          <mn>0</mn>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </math> 、 <math>
+        <msub>
+          <mi>s</mi>
+          <mi>z</mi>
+        </msub>
+        <mo>=</mo>
+        <mo>±</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+      </math> (どちらか一方) である。<br>
+      これにより s 軌道の電子が1つ入る。これを <math>
+        <mi>1</mi>
+        <msup>
+          <mi>s</mi>
+          <mn>1</mn>
+        </msup>
+      </math> または<math>
+        <msup>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mn>1</mn>
+        </msup>
+      </math>と表す。<br>
+      電子が2つになるとスピン量子数は平行スピンと反平行スピンの2つが存在すると考えられる。<br>
+      しかし、「2つ以上のフェルミ粒子（電子や陽子、中性子など）は、同一の量子状態を同時に占めることはできない」という<br>
+      「パウリの排他原理」により同じ主量子数、方位量子数、磁気量子数に同じスピンの電子は入ることができない。<br>
+      そのため、同じ軌道にはスピンの向きが逆の電子しか入ることができない。<br>
+      よって一つの軌道には最大で2つの電子しか入ることができない。<br>
+      さらに電子が増えて窒素原子について考えると、7個の電子を充填する必要がある。<br>
+      電子の充填はエネルギーが低い軌道から順に行われる。一般的には以下の図のように 1s > 2s > 2p > 3s > 3p >...の順序で行われる。<br>
+      3p 軌道の次に埋まるのは 4s 軌道で 3d 軌道には入らないことに注意する。<br>
+    </p>
+    <div class="orbitals_img_div">
+      <div class="column"> <img src="orbital_filing.png" alt="電子配置の図" width="300" height="300" decoding="async"> </div>
+    </div>
+    <p>
+      これによると、下の図のように窒素原子の電子配置は
+      <math>
+        <msup>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mi>s</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mn>2</mn>
+        </msup>
+        <msup>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mn>2</mn>
+            <mi>s</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mn>2</mn>
+        </msup>
+        <msup>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mn>2</mn>
+            <mi>p</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mn>3</mn>
+        </msup>
+      </math>となる。<br>
+      実際の水素、窒素、ナトリウム原子の原子軌道は以下の図のようになる。<br>
+      窒素の原子軌道を見ると 2p 軌道に電子が3つ入っているが、3つの軌道に一つずつである。<br>
+      これは「同じエネルギーの軌道（縮退した軌道）に電子が入る場合、同じスピンをできる限り多くする」という<br>
+      「フントの規則」によって電子が一つずつ入る。<br>
+    </p>
+    <div class="orbitals_img_div">
+      <div class="column"> <img src="H_electron_configuration.png" alt="電子配置の図" width="300" height="300"
+          decoding="async"> </div>
+      <div class="column"> <img src="N_electron_configuration.png" alt="電子配置の図" width="300" height="300"
+          decoding="async"> </div>
+      <div class="column"> <img src="Na_electron_configuration.png" alt="電子配置の図" width="300" height="300"
+          decoding="async"> </div>
     </div>
 
   </div>
