@@ -22,27 +22,28 @@ p {
 }
 
 .orbitals_img_div {
+    width: 100%;
+    height: auto;
     font-size: 20px;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: auto;
+
 }
 
 .column-text {
     margin: 0;
-    justify-content: center;
     text-align: center;
-    align-items: center;
     width: 100%;
     height: auto;
 }
 
+
 img {
-    text-align: center;
-    width: 90%;
+    display: block;
+    justify-content: center;
+    width: 200px;
     height: auto;
-    margin: 10px;
+    padding: 10px;
 }
 
 .equation {
